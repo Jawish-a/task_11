@@ -30,6 +30,8 @@ urlpatterns = [
     path('restaurants/<int:restaurant_id>/delete/',views.restaurant_delete ,name='restaurant-delete'),
 
     path('restaurants/<int:restaurant_id>/item/add/',views.item_create ,name='item-create'),
+    # no permission page
+    path('nope/', views.nope ,name='nope'),
 
     path('signup/',views.signup ,name='signup'),
     path('signin/',views.signin ,name='signin'),
